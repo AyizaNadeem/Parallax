@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+</head>
+<style>
+    .caption {
+        position: relative;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: black;
+    }
+
+    .bg1 {
+        background-image: url(bgd1.jpg);
+        min-height: 100%;
+        height: 80vh;
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg2,
+    .bg3 {
+        position: relative;
+        opacity: 0.65;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:45vh;
+    }
+
+    .bg2 {
+        background-image: url(bg2.jpg);
+        /* min-height: 100%; */
+    }
+
+    .bg3 {
+        background-image: url(bgd3.jpg);
+    }
+
+    .caption span.border {
+        background-color: #111;
+        color: white;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 10px;
+    }
+</style>
+
+<body>
+    <div class="bg1 ">
+        <div class="caption">
+            <span class="border">Scroll Down</span>
+        </div>
+    </div>
+    <div style="color:#777; background-color: white; text-align: center; padding:50px; text-align: justify;">
+        <h3 style="text-align:center;">Parallax Demo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur minima dolores optio quibusdam,
+            sapiente enim omnis aliquid qui odio vel necessitatibus unde rem sed alias possimus molestias perferendis
+            culpa. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus quibusdam repellat consequuntur
+            molestiae fuga natus id rerum dolore, quod iste molestias quaerat deserunt sunt, at, ut ratione incidunt
+            voluptas temporibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam nihil vero harum
+            eveniet. Facere necessitatibus aliquid facilis eaque animi delectus veniam nihil dolore. Optio
+            exercitationem tempora, quo voluptatem iure ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eligendi, quaerat debitis qui quisquam est atque voluptates, officia cum quod dicta cumque modi, dolorum
+            magni. Aut quibusdam laudantium nemo. Quae, tempora?</p>
+    </div>
+    <div class="bg2">
+        <div class="caption">
+            <span class="border" style="background-color:transparent; font: size 25px; color:#f7f7f7">Less Height</span>
+        </div>
+    </div>
+    <div style="position:relative">
+        <div
+            style="color:#ddd; background-color: #282e34; text-align: center; padding: 50px 80px;text-align: justify; ">
+            <p>Scroll up and down to really get the feeling of how Parallax scrolling works.</p>
+        </div>
+    </div>
+    <div class="bg3">
+        <div class="caption">
+            <span class="border" style="background-color: transparent; font-size: 25px; color: #f7f7f7;">Scrol up</span>
+        </div>
+    </div>
+    <div style="position: relative;">
+        <div style="color:#ddd;background-color: #282e34; text-align: center; padding: 50px 80px;text-align: justify;">
+            <p>Scroll up and down to really get the feeling of how parallex Scrolling work.</p>
+        </div>
+    </div>
+    <div class="bg1">
+        <div class="caption">
+            <span class="border">COOL!</span>
+        </div>
+    </div>
+</body>
+
+</html>
